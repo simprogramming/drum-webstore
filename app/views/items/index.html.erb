@@ -1,2 +1,9 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
+<h1>All drums</h1>
+
+<%= link_to "new drum", new_item_path %>
+
+<% @items.each do |item| %>
+  <h2><%= item.name %></h2>
+
+  <%= link_to "see", item_path(item) %>
+<% end %>
