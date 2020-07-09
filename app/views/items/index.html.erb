@@ -12,7 +12,11 @@
 <div class="container">
   <div class="cards">
     <% @items.each do |item| %>
-      <%=  link_to (image_tag item.pictures) , item_path(item) %>
+      <% item.photos.each_with_index do |photo, index| %>
+        <% if index == 0 %>
+          <%= link_to (cl_image_tag photo.key, width: 400, height: 300, crop: :fit), item_path(item) %>
+        <% end %>
+      <% end %>
     <% end %>
   </div>
 </div>
