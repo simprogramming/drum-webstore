@@ -9,11 +9,13 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <style type="text/css">
+      .img-circle { border-radius: 50%; }
+    </style>
   </head>
 
   <body>
     <%= render 'shared/flashes' %>
-
     <%= yield %>
   </body>
 </html>

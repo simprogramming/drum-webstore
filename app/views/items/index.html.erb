@@ -1,9 +1,18 @@
-<h1>All drums</h1>
+<%= render 'shared/navbar' %>
+<div class="banner">
+  <h2>Drum FX</h2>
+</div>
 
-<%= link_to "new drum", new_item_path %>
+<div class="container my-5 shop">
+  <p class="text-left">Drum Shop</p>
+</div>
 
-<% @items.each do |item| %>
-  <h2><%= item.name %></h2>
+</hr>
 
-  <%= link_to "see", item_path(item) %>
-<% end %>
+<div class="container">
+  <div class="cards">
+    <% @items.each do |item| %>
+      <%=  link_to (image_tag item.pictures) , item_path(item) %>
+    <% end %>
+  </div>
+</div>

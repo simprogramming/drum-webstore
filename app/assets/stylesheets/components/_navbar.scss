@@ -1,1 +1,19 @@
+.navbar-bookstore {
+  background-color: transparent!important;
+  transition: 0.5s;
+  font-size: 20px;
+}
 
+
+.navbar-bookstore a {
+  color: white;
+}
+
+.navbar-bookstore-black {
+  background-color: white!important;
+}
+
+.navbar-bookstore-black a {
+  color: black!important;
+  transition:0.5s;
+}
