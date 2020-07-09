@@ -6,23 +6,23 @@
           <%= link_to "Home", '#', class: "nav-link" %>
         </li>
         <li>
-          <%= link_to "Gear", '#', class: "nav-link" %>
+          <%= link_to "About", '#', class: "nav-link" %>
         </li>
         <li>
-          <%= link_to "About", "#", class: "nav-link" %>
+          <%= link_to "Contact us", "#", class: "nav-link" %>
         </li>
         <li>
-          <%= link_to "New", "#", class: "nav-link" %>
+          <%= link_to "New", new_item_path , class: "nav-link" %>
         </li>
       <% else %>
         <li>
-          <%= link_to "Home", '#', class: "nav-link" %>
+          <%= link_to "Home", items_path, class: "nav-link" %>
         </li>
         <li>
-          <%= link_to "Gear", '#', class: "nav-link" %>
+          <%= link_to "About", '#', class: "nav-link" %>
         </li>
         <li>
-          <%= link_to "About", "#", class: "nav-link" %>
+          <%= link_to "Contact us", "#", class: "nav-link" %>
         </li>
       <% end %>
     </ul>
