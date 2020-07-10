@@ -1,11 +1,27 @@
 .description {
   width: 100%;
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding-top: 5px;
+  // text-align: center;
+  // background-color: black;
+  // color: white;
+  padding: 15px;
   margin-top: 25px;
   border-radius: 3px;
+  h1 {
+    font-weight: bold;
+  }
+  .drum-details {
+    color: grey;
+  }
+  p span {
+    font-weight: bold;
+  }
+  .drum-price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .half_background {
+    background: linear-gradient(to top, rgb(207, 207, 207) 50%, transparent 50%);
+  }
 }
 
 .drum-pictures {
@@ -14,6 +30,3 @@
   padding-left: 10px;
 }
 
-.description p {
-  margin: 30px;
-}
