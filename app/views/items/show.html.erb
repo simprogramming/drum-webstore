@@ -4,10 +4,18 @@
     <%= render "carousel" %>
   </div>
   <div class="description">
-    <h1 p-5><%= @item.name %></h1>
-    <h2><%= @item.brand %></h2>
-    <h3><%= @item.details %></h3>
-    <h3><%= @item.condition %></h3>
-    <h4><%= @item.price %></h4>
+    <div>
+      <h1 p-5><%= @item.name %></h1>
+      <h2><%= @item.brand %></h2>
+    </div>
+    <p>_______________________________</p>
+    <div>
+      <h3><%= @item.details %></h3>
+      <h3><%= @item.condition %></h3>
+    </div>
+    <p>_______________________________</p>
+    <div class="flex-end">
+      <h4><%= @item.price %></h4>
+    </div>
   </div>
 </div>
