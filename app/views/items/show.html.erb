@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row d-flex justify-content-between align-items-center">
     <div class="drum-pictures col-sm-12 col-lg-5">
-      <%= render "carousel" %>
+      <%= render "carousel2" %>
     </div>
 
     <div class="description col-sm-12 col-lg-5">
@@ -15,4 +15,11 @@
         <%= link_to 'Contact us', "#", class: 'btn btn-dark'%>
     </div>
   </div>
+</div>
+
+<div class="container">
+  <% if user_signed_in? %>
+    <%= link_to "edit", edit_item_path(@item) %>
+    <%= link_to "delete", item_path(@item), method: :delete, data: { confirm: "Are you sure?"} %>
+  <% end %>
 </div>
