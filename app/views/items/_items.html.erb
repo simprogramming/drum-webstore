@@ -2,7 +2,7 @@
   <% if index == 0 %>
     <%= link_to item_path(item) do%>
       <div class="drum-card container">
-        <%= cl_image_tag photo.key, width: 400, height: 300, crop: :fit %>
+        <%= cl_image_tag photo.key %>
         <div class="overlay">
           <div class="text">
             <p>
