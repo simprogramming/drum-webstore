@@ -1,24 +1,19 @@
-<div class="container my-5">
-  <div class="cards">
-    <% @items.each do |item| %>
-      <% item.photos.each_with_index do |photo, index| %>
-        <% if index == 0 %>
-          <%= link_to item_path(item) do%>
-            <div class="drum-card container">
-              <%= cl_image_tag photo.key, width: 400, height: 300, crop: :fit %>
-              <div class="overlay">
-                <div class="text">
-                  <p>
-                    <span class="item-name"><%= item.name %></span><br>
-                    from <%= item.brand %><br>
-                    $<%= item.price %>
-                  </p>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        <% end %>
-      <% end %>
+<% item.photos.each_with_index do |photo, index| %>
+  <% if index == 0 %>
+    <%= link_to item_path(item) do%>
+      <div class="drum-card container">
+        <%= cl_image_tag photo.key, width: 400, height: 300, crop: :fit %>
+        <div class="overlay">
+          <div class="text">
+            <p>
+              <span class="item-name"><%= item.name %></span><br>
+              from <%= item.brand %><br>
+              $<%= item.price %>
+            </p>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </div>
-</div>
+  <% end %>
+<% end %>
+
