@@ -27,7 +27,7 @@ class ItemsController < ApplicationController
 
   def update
     @item.update(item_params)
-    redirect_to items_path
+    redirect_to item_path(@item)
   end
 
   def destroy
