@@ -9,7 +9,7 @@
         <h1><span class="half_background"><%= @item.name %></span></h1>
         <p>from <%= @item.brand %></p>
         <p class="drum-details"><%= @item.details %></p>
-        <p class="drum-price"><%= @item.price %></p>
+        <p class="drum-price">$<%= @item.price %></p>
         <p><span>Condition:</span> <%= @item.condition %></p>
 
         <%= link_to 'Contact us', "#", class: 'btn btn-dark'%>

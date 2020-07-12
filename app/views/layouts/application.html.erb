@@ -17,6 +17,13 @@
 
   <body>
     <%= render 'shared/flashes' %>
-    <%= yield %>
+    <div class="flex-wrapper">
+      <div>
+        <%= yield %>
+      </div>
+      <div>
+        <%= render 'shared/footer' %>
+      </div>
+    </div>
   </body>
 </html>
